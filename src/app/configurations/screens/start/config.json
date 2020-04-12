@@ -1,0 +1,31 @@
+{
+    "title":"American Football simulation",
+    "main_class":"style-start",
+    "title_class":"title",
+    "background_image_api":"https://milehighsports.com/wp-content/uploads/2018/08/iStock-685549952.jpg",
+    "layout":{
+        "rows" : [
+            {
+                "elements":[
+                    {
+                        "items":
+                        [
+                            {
+                                "tag":"button",
+                                "class":"but",
+                                "id":"exist",
+                                "text":"Existing user"
+                            },
+                            {
+                                "tag":"button",
+                                "class":"but",
+                                "id":"new",
+                                "text":"New user"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

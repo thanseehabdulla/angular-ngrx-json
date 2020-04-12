@@ -13,7 +13,7 @@ export class VideoplaybackscreenComponent implements OnInit {
   myjson:any=JSON;
   
   constructor(http:HttpClient, private router: Router, private route: ActivatedRoute) {
-    http.get('app/configurations/screens/videoplayback/story1.json').subscribe(data => {
+    http.get('app/configurations/screens/video/config.json').subscribe(data => {
       this.configurations = data;
     });
   }

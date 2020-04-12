@@ -2,6 +2,7 @@
 <div class={{configurations.main_class}} [ngStyle]="{'background-image': 'url(' + configurations.background_image_api + ')', 'background-size': 'cover'  }">
     
     <h1 class={{configurations.title_class}}>{{configurations.title}}</h1>
+    <p>{{configurations.descriptions}}</p>
     <div class="x-layout" *ngFor="let row of configurations.layout.rows"> 
         <div class="c-row" *ngFor="let elem of row.elements"> 
             <div class="c-elements" *ngFor="let item of elem.items">

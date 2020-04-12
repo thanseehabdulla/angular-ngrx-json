@@ -11,7 +11,7 @@ export class StartscreenComponent implements OnInit {
   configurations:any;
   
   constructor(http:HttpClient, private router: Router, private route: ActivatedRoute) {
-    http.get('app/configurations/screens/startscreen/config.json').subscribe(data => {
+    http.get('app/configurations/screens/start/config.json').subscribe(data => {
       this.configurations = data;
     });
   }

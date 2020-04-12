@@ -12,7 +12,7 @@ export class ConversationscreenComponent implements OnInit {
   myjson:any=JSON;
   
   constructor(http:HttpClient, private router: Router, private route: ActivatedRoute) {
-    http.get('app/configurations/screens/conversationscreen/story1.json').subscribe(data => {
+    http.get('app/configurations/screens/conversation/config.json').subscribe(data => {
       this.configurations = data;
       
     });

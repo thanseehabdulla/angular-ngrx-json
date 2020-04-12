@@ -11,7 +11,7 @@ export class HomescreenComponent implements OnInit {
   configurations:any;
   
   constructor(http:HttpClient, private router: Router, private route: ActivatedRoute) {
-    http.get('app/configurations/screens/homescreen/config.json').subscribe(data => {
+    http.get('app/configurations/screens/home/config.json').subscribe(data => {
       this.configurations = data;
     });
   }
@@ -33,7 +33,6 @@ export class HomescreenComponent implements OnInit {
   goBack(){
     console.log("goback")
     this.router.navigate([`../`], { relativeTo: this.route });
-
   }
 
 }
