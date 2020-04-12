@@ -1,0 +1,20 @@
+<app-backbutton (goBack)="goBack()"></app-backbutton>
+
+<div class={{configurations.main_class}} [ngStyle]="{'background-image': 'url(' + configurations.background_image_api + ')', 'background-size': 'cover'  }">
+    
+    <h1 class={{configurations.title_class}}>{{configurations.title}}</h1>
+    <div class="x-layout" *ngFor="let row of configurations.layout.rows"> 
+        <div class="c-row" *ngFor="let elem of row.elements"> 
+            <div class="c-elements" *ngFor="let item of elem.items">
+                <div *ngIf="item.tag == 'video-player'" class={{item.class}}>
+                    <div *ngFor="let data of item.data"><app-videoplayback props='{{myjson.stringify(data)}}'></app-videoplayback>
+                    </div>
+                </div>
+            <div id={{item.id}} *ngIf="item.tag == 'button'" class={{item.class}} (click)="buttonClick($event)">{{item.text}}</div> 
+            <div id={{item.id}} *ngIf="item.tag == 'a'" class={{item.class}} >{{item.text}}</div>
+        </div>
+    </div>
+</div>
+</div>
+
+

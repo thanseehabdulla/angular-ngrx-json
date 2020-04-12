@@ -1,0 +1,32 @@
+div[class^="style"]{
+    
+    /* Full height */
+    height: 700px;
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .title{
+        text-align: center;
+        color:burlywood;
+        font-size: 52px;
+        font-weight:600;
+        padding-top:222px;
+    }
+    
+    .c-row{
+        display: flex;
+        justify-content: center;
+        .c-elements{
+            
+            .but{
+                color:#333;
+                background-color: white;
+                cursor: pointer;
+                border-radius: 15px;
+                padding: 10px;
+            }
+        }
+    }
+}
